@@ -1,0 +1,19 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>{% extends 'base.html' %}
+
+{% block title %}Добавление статьи{% endblock %}
+
+{% block body %}
+<div class="txt item-bl-bg newses">
+
+    <h1>Добавление статьи</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+
+        <input type="submit" class="btn btn-success" value="Отправить">
+    </form>
+    <span id="accept">{{ accept }}</span>
+</div>
+{% endblock %}

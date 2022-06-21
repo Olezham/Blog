@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ full.title }}{% endblock %}
+
+{% block body %}
+<h1>{{ full.title }}</h1>
+
+
+<div class="alert alert-info">
+    <h2>{{ full.text }}</h2>
+    <h3>Дата:{{ full.date }}</h3>
+
+</div>
+
+{% endblock %}
